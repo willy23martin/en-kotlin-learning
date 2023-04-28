@@ -30,3 +30,36 @@ when {
   else -> println("We are ok with our stock")
 }
 
+/**
+Loops:
+*/
+
+while(currentLibraryStock < 23) {
+  currentLibraryStock += 1
+}
+
+do {
+  currentLibraryStock -= 1
+} while(currentLibraryStock > 1)
+
+for(year in 2023.. 2033){
+  println("Best years counting $year")
+}
+
+for(number in 23.rangeTo(44).step(5)){
+  println("${++number}")
+}
+
+for(character in "String"){
+  print(character)
+}
+
+for((index, item) in 23.rangeTo(44).step(5).withIndex()){
+  print("${index} - $item")
+}
+println()
+
+val yearSuffix = arrayOf(23, 33, 43, 53)
+for(yearSuffixIndex in yearSuffix.indices){
+  println("$yearSuffixIndex - ${yearSuffix[yearSuffixIndex]}")
+}
